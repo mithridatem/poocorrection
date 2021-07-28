@@ -1,4 +1,17 @@
 <?php
+    /*-----------------------------------------------------
+                            Maison :
+        -----------------------------------------------------*/
+        include './maison.php';
+        $maison = new Maison();
+        //affectation des valeurs
+        $maison->nom = "villa";
+        $maison->longueur = 25;
+        $maison->largeur = 19;
+        $maison->nbrEtage = 11;
+        $surface = $maison->surfaceV2();
+        echo "<p>la surface de la $maison->nom est égale à : $surface m2</p>";
+    
     //appel du fichier class.php qui contient la classe Vehicule
     //require est équivalent à include
     include './vehicule.php';
