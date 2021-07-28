@@ -11,7 +11,9 @@
         $maison->nbrEtage = 11;
         $surface = $maison->surfaceV2();
         echo "<p>la surface de la $maison->nom est égale à : $surface m2</p>";
-    
+    /*-----------------------------------------------------
+                            Vehicule :
+        -----------------------------------------------------*/
     //appel du fichier class.php qui contient la classe Vehicule
     //require est équivalent à include
     include './vehicule.php';
